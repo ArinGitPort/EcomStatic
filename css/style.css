@@ -1,122 +1,122 @@
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 /* Styling the header section */
 header {
-    background-color: #333; /* Dark background color */
-    color: white; /* White text */
-    padding: 15px 20px; /* Spacing inside the header */
-    text-align: center; /* Centers the header content */
+  background-color: #333; /* Dark background color */
+  color: white; /* White text */
+  padding: 15px 20px; /* Spacing inside the header */
+  text-align: center; /* Centers the header content */
 }
 
 /* Styling the navigation menu */
 nav ul {
-    list-style: none; /* Removes bullet points */
-    margin-top: 10px;
+  list-style: none; /* Removes bullet points */
+  margin-top: 10px;
 }
 
 nav ul li {
-    display: inline; /* Aligns menu items horizontally */
-    margin: 0 15px;
+  display: inline; /* Aligns menu items horizontally */
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none; /* Removes underlines from links */
-    font-size: 18px;
+  color: white;
+  text-decoration: none; /* Removes underlines from links */
+  font-size: 18px;
 }
 
 /* Main Layout - Sidebar and Products */
 .container {
-    display: flex; /* Places sidebar and products side by side */
-    padding: 20px;
+  display: flex; /* Places sidebar and products side by side */
+  padding: 20px;
 }
 
 /* Sidebar styling */
 .sidebar {
-    width: 250px; /* Fixed width for the sidebar */
-    background-color: #f4f4f4; /* Light gray background */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
 }
 
 .sidebar h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .sidebar ul {
-    list-style: none;
+  list-style: none;
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    display: block;
-    padding: 8px;
-    border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .sidebar ul li a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* Styling the product section */
 .products {
-    flex: 1;
-    padding-left: 20px;
-    text-align: center;
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
 }
 
 .product-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .product {
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .product h3 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .product p {
-    color: #ff6f00;
-    font-size: 18px;
+  color: #ff6f00;
+  font-size: 18px;
 }
 
 .product button {
-    background-color: #ff6f00;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .product button:hover {
-    background-color: #e65c00;
+  background-color: #e65c00;
 }
