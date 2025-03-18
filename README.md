@@ -1,2 +1,2 @@
 # Static E-commerce Website
-## HTML/CSS Practice
+## HTML/CSS Practice.
