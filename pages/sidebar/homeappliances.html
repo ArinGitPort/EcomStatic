@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop-E</title>
+    <link rel="stylesheet" href="/assets/shop.css" />
+    <!-- Linking to the external CSS file -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Welcome to Shop-E</h1>
+      <nav>
+        <ul>
+          <li><a href="/pages/home.html">Home</a></li>
+          <li><a href="../sidebar/electonics.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content: Sidebar + Product Section -->
+    <div class="container">
+      <!-- Sidebar for Categories -->
+      <aside class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="/pages/sidebar/electonics.html">Electronics</a></li>
+          <li><a href="/pages/sidebar/clothing.html">Clothing</a></li>
+          <li><a href="/pages/sidebar/homeappliances.html">Home Appliances</a></li>
+          <li><a href="/pages/sidebar/sports.html">Sports</a></li>
+          <li><a href="/pages/sidebar/books.html">Books</a></li>
+        </ul>
+      </aside>
+
+      <!-- Product Section -->
+      <section class="products" >
+        <h2 style="margin-bottom: 2rem; font-size: 2.3rem;">Featured Products</h2>
+        <div class="product-container">
+          <!-- Product 1 -->
+          <div class="product">
+            <div class="productimgContainer">
+              <img src="/assets/images/fridge.jpg" />
+            </div>
+            <div class="productInfo">
+              <h3>Fridge</h3>
+              <p>$500.00</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="product">
+            <div class="productimgContainer">
+              <img src="/assets/images/oven.jpg"  />
+            </div>
+            <div class="productInfo">
+              <h3>Oven</h3>
+              <p>$350.00</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="product">
+            <div class="productimgContainer">
+              <img src="/assets/images/deepfryer.jpg"  />
+            </div>
+            <div class="productInfo">
+              <h3>Deep Fryer</h3>
+              <p>$120.00</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 My E-Commerce Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
