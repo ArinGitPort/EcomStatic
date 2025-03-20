@@ -1,41 +1,195 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0%;
-  padding: 0%;
-
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 210, 150);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 210, 150, 1) 0%,
+    rgba(255, 245, 215, 1) 33%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  overflow-x: hidden;
 }
 
-
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
+  color: #e08d6f;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
   display: flex;
-
 }
 
-nav ul li{
+nav ul li {
+  display: inline-block;
   list-style: none;
   padding: 1rem 1rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
-.searchfieldCotainer{
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #e08d6f;
+}
+
+.title {
+  position: absolute;
+  top: -0.4rem;
+  left: 3rem; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff5300;
+}
+
+
+
+.headerContainer {
+  width: 100vw;
+}
+
+/* Search Field Container */
+.searchfieldContainer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
+  position: relative; /* Allows absolute positioning inside */
+  width: 280px; /* Adjust width */
 }
 
-.searchfieldHome{
-  border: none ;
-  background-color: orangered;
+/* Search Input */
+.searchfieldHome {
   padding: 0.3rem;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  border: none;
+  background-color: #e08d6f;
+  outline: none;
+  color: white;
+  border-radius: 20px; /* More rounded for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
 
+/* Placeholder Styling */
+.searchfieldHome::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+/* Search Input Focus Effect */
+.searchfieldHome:focus {
+  background-color: #d97b5a; /* Darker background on focus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Icon Inside Input */
+.searchIcon {
+  position: absolute;
+  right: -4.5rem;
+  width: 100%;
+  height: 20px;
+  fill: white; /* Adjust icon color */
+  pointer-events: none; /* Prevents click interference */
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Search Icon Effect */
+.searchfieldHome:focus + .searchIcon {
+  opacity: 1;
+}
+
+/* Landing Page Styling */
+.contentText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.landingTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff5300;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Subtitle */
+.landingSubtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Call-to-Action Button */
+.ctaButton {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff5300;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 83, 0, 0.3);
+}
+
+.ctaButton:hover {
+  background: #e64a00;
+  transform: scale(1.05);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contentText {
+    width: 90%;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .landingTitle {
+    font-size: 2.5rem;
+  }
+  .landingSubtitle {
+    font-size: 1.2rem;
+  }
+  .ctaButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }
